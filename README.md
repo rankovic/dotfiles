@@ -1,1 +1,3 @@
-# dotfiles
+# .files
+
+### Use at your own risk!
