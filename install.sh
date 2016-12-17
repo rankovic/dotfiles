@@ -2,6 +2,10 @@
 
 DIR=$HOME/.dotfiles
 
+# SYSTEM
+rm $HOME/.Xresources
+ln -s $DIR/system/Xresources $HOME/.Xresources
+
 # GIT
 echo "Creating symlink for GIT in $HOME"
 
