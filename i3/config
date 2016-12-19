@@ -163,3 +163,6 @@ bar {
 	position top
         status_command i3blocks -c ~/.config/i3/i3blocks.conf
 }
+
+exec --no-startup-id feh --bg-fill ~/.wallpaper.png
+exec --no-startup-id nm-applet
