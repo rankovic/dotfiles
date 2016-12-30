@@ -1,3 +1,8 @@
+"---------- Vundle
+set nocompatible
+
+so ~/.vim/plugins.vim
+
 syntax enable				"Enable Syntax highlighting.
 
 colorscheme atom-dark-256 
@@ -16,6 +21,7 @@ let mapleader = ',' 			"Change default (\) leader to ,.
 
 "---------- Mappings 
 nmap <leader>ev :tabedit ~/.vimrc<cr>
+nmap <leader>ep :tabedit ~/.vim/plugins.vim<cr>
 nmap <leader><space> :nohlsearch<cr>
 
 
