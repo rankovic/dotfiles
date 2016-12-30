@@ -1,0 +1,26 @@
+syntax enable				"Enable Syntax highlighting.
+
+colorscheme atom-dark-256 
+
+set guioptions-=l			" 
+set guioptions-=L			" Remove Scrollbars
+set guioptions-=r			" 
+set guioptions-=R			" 
+set backspace=indent,eol,start 		"Make backspace behave like every other editor.
+set number 				"Show line numbers.
+set hlsearch 				"Higligh search results.
+set incsearch
+
+let mapleader = ',' 			"Change default (\) leader to ,.
+
+
+"---------- Mappings 
+nmap <leader>ev :tabedit ~/.vimrc<cr>
+nmap <leader><space> :nohlsearch<cr>
+
+
+"---------- Auto-Commands
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %	"Automaticaly source .vimrc on save.
+augroup END
