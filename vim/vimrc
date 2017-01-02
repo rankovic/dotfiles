@@ -23,7 +23,7 @@ let mapleader = ',' 			"Change default (\) leader to ,.
 nmap <leader>ev :tabedit ~/.vimrc<cr>
 nmap <leader>ep :tabedit ~/.vim/plugins.vim<cr>
 nmap <leader><space> :nohlsearch<cr>
-
+nmap <leader>1 :NERDTreeToggle<cr>
 
 "---------- Auto-Commands
 augroup autosourcing
