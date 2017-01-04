@@ -17,13 +17,20 @@ set hlsearch 				"Higligh search results.
 set incsearch
 
 let mapleader = ',' 			"Change default (\) leader to ,.
-
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
 "---------- Mappings 
 nmap <leader>ev :tabedit ~/.vimrc<cr>
 nmap <leader>ep :tabedit ~/.vim/plugins.vim<cr>
+
 nmap <leader><space> :nohlsearch<cr>
+
 nmap <leader>1 :NERDTreeToggle<cr>
+
+nmap <leader>p :CtrlP<cr>
+nmap <leader>t :CtrlPBufTag<cr>
+nmap <leader>r :CtrlPMRUFiles<cr>
+
 
 "---------- Auto-Commands
 augroup autosourcing

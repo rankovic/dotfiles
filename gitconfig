@@ -3,3 +3,5 @@
 	name = Miroslav Ranković
 [push]
 	default = simple
+[core]
+	excludesfile = /home/miroslav/.gitignore_global
