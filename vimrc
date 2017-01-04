@@ -1,4 +1,3 @@
-"---------- Vundle
 set nocompatible
 
 so ~/.vim/plugins.vim
