@@ -32,3 +32,4 @@ if ask 'Create symlinks for Vim'; then
 	ln -fs $DIR/vim/bundle $HOME/.vim/bundle;
 fi
 
+if ask 'Create symlink for Ctags'; then	ln -fs $DIR/ctags $HOME/.ctags; fi
