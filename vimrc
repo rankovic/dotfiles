@@ -14,6 +14,12 @@ set backspace=indent,eol,start 		"Make backspace behave like every other editor.
 set number 				"Show line numbers.
 set hlsearch 				"Higligh search results.
 set incsearch
+set autoindent
+set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set cursorline
 
 let mapleader = ',' 			"Change default (\) leader to ,.
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
@@ -33,6 +39,6 @@ nmap <leader>r :CtrlPMRUFiles<cr>
 
 "---------- Auto-Commands
 augroup autosourcing
-	autocmd!
-	autocmd BufWritePost .vimrc source %	"Automaticaly source .vimrc on save.
+        autocmd!
+        autocmd BufWritePost .vimrc source %	"Automaticaly source .vimrc on save.
 augroup END
