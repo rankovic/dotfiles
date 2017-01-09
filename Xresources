@@ -1,5 +1,6 @@
-URxvt.font: xft:Fira Code: size=11
+URxvt.font: xft:Fira Code: size=12
 URxvt.scrollBar: false
+URxvt.lineSpace: -1
 
 ! special
 *.foreground:   #98d1ce
