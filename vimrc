@@ -23,6 +23,7 @@ set relativenumber
 
 let mapleader = ',' 			"Change default (\) leader to ,.
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+let g:php_cs_fixer_level = "psr2"
 
 "---------- Mappings 
 nmap <leader>ev :tabedit ~/.vimrc<cr>
@@ -37,6 +38,8 @@ nmap <leader>t :CtrlPBufTag<cr>
 nmap <leader>r :CtrlPMRUFiles<cr>
 
 vmap <Leader>su ! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" }'<cr>
+
+nnoremap <Leader>ff :call PhpCsFixerFixFile()<cr>
 
 "---------- Functions
 function! IPhpInsertUse()

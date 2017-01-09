@@ -11,5 +11,6 @@ call vundle#begin()
         Plugin 'StanAngeloff/php.vim'
         Plugin 'arnaud-lb/vim-php-namespace'
         Plugin 'Valloric/YouCompleteMe'
+        Plugin 'stephpy/vim-php-cs-fixer'
 
 call vundle#end()
