@@ -12,24 +12,24 @@ ask() {
     return 1
 }
 
-if ask 'Create symlink for Xresources'; then ln -fs $DIR/Xresources $HOME/.Xresources; fi
+if ask 'Create symlink for Xresources'; then ln -fsv $DIR/system/Xresources $HOME/.Xresources; fi
 
-if ask 'Create symlink for Wallpaper'; then ln -fs $DIR/wallpaper.png $HOME/.wallpaper.png; fi
+if ask 'Create symlink for Wallpaper'; then ln -fsv $DIR/system/wallpaper.png $HOME/.wallpaper.png; fi
 
 if ask 'Create symlinks for i3wm'; then
-	ln -fs $DIR/i3/config $HOME/.config/i3/config;
-	ln -fs $DIR/i3/i3blocks.conf $HOME/.config/i3/i3blocks.conf;
+	ln -fsv $DIR/i3/config $HOME/.config/i3/config;
+	ln -fsv $DIR/i3/i3blocks.conf $HOME/.config/i3/i3blocks.conf;
 fi
 
 if ask 'Create symlinks for Git'; then
-	ln -fs $DIR/gitconfig $HOME/.gitconfig;
-	ln -fs $DIR/gitignore_global $HOME/.gitignore_global;
+	ln -fsv $DIR/git/gitconfig $HOME/.gitconfig;
+	ln -fsv $DIR/git/gitignore_global $HOME/.gitignore_global;
 fi
 
 if ask 'Create symlinks for Vim'; then
-	ln -fs $DIR/vimrc $HOME/.vimrc;
-	ln -fs $DIR/vim/plugins.vim $HOME/.vim/plugins.vim;
-	ln -fs $DIR/vim/bundle $HOME/.vim/bundle;
+	ln -fsv $DIR/vim/vimrc $HOME/.vimrc;
+	ln -fsv $DIR/vim/plugins.vim $HOME/.vim/plugins.vim;
+	ln -fsv $DIR/vim/bundle $HOME/.vim/bundle;
 fi
 
-if ask 'Create symlink for Ctags'; then	ln -fs $DIR/ctags $HOME/.ctags; fi
+if ask 'Create symlink for Ctags'; then	ln -fsv $DIR/ctags/ctags $HOME/.ctags; fi

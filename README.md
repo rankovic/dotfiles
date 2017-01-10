@@ -2,4 +2,4 @@
 
 ### Use at your own risk!
 
-urvxt theme: https://terminal.sexy/#JjI47O_xJjI4_5gAi8NK_8EHA6n06R5jAJaIz9jcN0dP_6dNnMxl_6AAgdT6rRRXJqaa7O_x
+urvxt theme (Ocean Dark): https://terminal.sexy/#KzA7wMXOKzA7v2Fqo76M68uLj6GztI6tlrW0wMXOZXN-v2Fqo76M68uLj6GztI6tlrW07_H1 
