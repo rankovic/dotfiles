@@ -1,0 +1,18 @@
+#$HOME/.bashrc
+
+if [[ $- != *i* ]]; then
+	# non-interactive shell. Bye.
+	return
+fi
+
+if [ -d $HOME/.shellrc/bashrc.d ]; then
+	for file in $HOME/.shellrc/bashrc.d/*.bash; do
+		source $file
+	done	
+fi
+ 
+if [ -d $HOME/.shellrc/rc.d ]; then
+	for file in $HOME/.shellrc/rc.d/*.sh; do
+		source $file
+	done
+fi

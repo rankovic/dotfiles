@@ -1,0 +1,11 @@
+# $HOME/.bash_profile
+
+if [ -f $HOME/.bashrc ]; then
+	source $HOME/.bashrc
+fi
+
+if [ -d $HOME/.shellrc/login.d ]; then
+	for file in $HOME/logind.d/*.sh; do
+		source $file
+	done
+fi

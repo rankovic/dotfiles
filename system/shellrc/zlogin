@@ -1,0 +1,7 @@
+# $HOME/.zlogin
+
+if [ -d $HOME/.shellrc/login.d ]; then
+	for file in $HOME/logind.d/*.sh; do
+		source $file
+	done
+fi
