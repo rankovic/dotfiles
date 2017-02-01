@@ -4,6 +4,8 @@ so ~/.vim/plugins.vim
 
 syntax enable				"Enable Syntax highlighting.
 
+colorscheme atom-dark-256
+
 set guioptions-=l			" 
 set guioptions-=L			" Remove Scrollbars
 set guioptions-=r			" 
@@ -24,7 +26,6 @@ set relativenumber
 let mapleader = ',' 			"Change default (\) leader to ,.
 let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 let g:php_cs_fixer_level = "psr2"
-
 "---------- Mappings 
 nmap <leader>ev :tabedit ~/.vimrc<cr>
 nmap <leader>ep :tabedit ~/.vim/plugins.vim<cr>
