@@ -4,6 +4,7 @@ so ~/.vim/plugins.vim
 
 syntax enable				"Enable Syntax highlighting.
 
+colorscheme morning
 colorscheme atom-dark-256
 
 set guioptions-=l			" 
