@@ -1,3 +1,7 @@
 function homestead() {
-    cd $HOME/Homestead && vagrant $*
+    if [ $1 = "edit" ]; then
+        ( cd ~/Homestead && vim Homestead.yaml )
+    else
+        ( cd ~/Homestead && vagrant $* )
+    fi
 }
