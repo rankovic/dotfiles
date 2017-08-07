@@ -1,11 +1,18 @@
 SRC := $(pwd)
 
-all: system
+all: vim git ctags
 	
-system:
-	ln -fsv $(SRC)/system/Xresources ${HOME}/.Xresources 
-	ln -fsv $(SRC)/sysyem/wallpaper.png ${HOME}/.wallpaper.png
+vim:
+	# VIM
+	ln -fsv $(SRC)/vim/vim ${HOME}/.vimrc 
+	ln -fsv $(SRC)/vim ${HOME}/.vim
 
-clean:
-	rm ${HOME}/.Xresources
-	rm ${HOME}/.wallpaper.png
+git:
+	ln -fsv $(SRC)/git/gitconfig ${HOME}/.gitconfig
+	ln -fsv $(SRC)/git/gitignore_global ${HOME}/.gitignore_global
+	
+
+ctags:
+	ln -fsv $(SRC)/ctags/ctags ${HOME}/.ctags
+	
+
