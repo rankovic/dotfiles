@@ -1,5 +1,14 @@
 # .files
 
-### Use at your own risk!
-
-urvxt theme (Ocean Dark): https://terminal.sexy/#KzA7wMXOKzA7v2Fqo76M68uLj6GztI6tlrW0wMXOZXN-v2Fqo76M68uLj6GztI6tlrW07_H1 
+Installation:
+'''
+git clone git@github.com:rankovic/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+git submodule init
+git submodule update
+./install.sh
+vim +PlugInstall +qall
+sudo apt-get install build-essential cmake python-dev python3-dev
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-compiler
+'''
