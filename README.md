@@ -10,5 +10,5 @@ git submodule update
 vim +PlugInstall +qall
 sudo apt-get install build-essential cmake python-dev python3-dev
 cd ~/.vim/bundle/YouCompleteMe
-./install.py --clang-compiler
+./install.py --clang-completer
 ```
