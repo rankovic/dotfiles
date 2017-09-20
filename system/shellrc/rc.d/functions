@@ -1,6 +1,8 @@
 function homestead() {
     if [ $1 = "edit" ]; then
         ( cd ~/Homestead && vim Homestead.yaml )
+    elif [ $1 = "start" ]; then
+        ( cd ~/Homestead && vagrant up && vagrant ssh )
     else
         ( cd ~/Homestead && vagrant $* )
     fi
