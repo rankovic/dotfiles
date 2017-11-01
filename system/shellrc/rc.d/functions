@@ -7,3 +7,11 @@ function homestead() {
         ( cd ~/Homestead && vagrant $* )
     fi
 }
+
+function lamp() {
+    if [ $1 = "start" ]; then
+        sudo service apache2 start && sudo service mysql start
+    elif [ $1 = "stop" ]; then
+        sudo service apache2 stop && sudo service mysql stop
+    fi
+}
