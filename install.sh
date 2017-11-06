@@ -23,3 +23,5 @@ if ask 'Create symlinks for Vim'; then
 fi
 
 if ask 'Create symlink for Ctags'; then	ln -fsv $DIR/ctags/ctags $HOME/.ctags; fi
+
+if ask 'Create symlink for tmux'; then	ln -fsv $DIR/tmux/tmux.conf $HOME/.tmux.conf; fi
