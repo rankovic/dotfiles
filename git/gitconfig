@@ -6,3 +6,7 @@
 [core]
 	excludesfile = /home/miroslav/.gitignore_global
 	editor = vim
+[merge]
+	ff = false
+[credential]
+	helper = store

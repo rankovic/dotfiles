@@ -10,10 +10,13 @@ function homestead() {
 
 function lamp() {
     if [ $1 = "start" ]; then
+        echo 'Starting Apache and MySQL servers'
         sudo service apache2 start && sudo service mysql start
     elif [ $1 = "stop" ]; then
+        echo 'Stoping Apache and MySQL servers'
         sudo service apache2 stop && sudo service mysql stop
     elif [ $1 = "restart" ]; then
+        echo 'Restarting Apache and MySQL servers'
         sudo service apache2 restart && sudo service mysql restart
     fi
 }
