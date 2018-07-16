@@ -20,3 +20,8 @@ function lamp() {
         sudo service apache2 restart && sudo service mysql restart
     fi
 }
+
+function sshdev() {
+   tmux select-pane -P 'bg=#810707'
+   ssh $*
+}
